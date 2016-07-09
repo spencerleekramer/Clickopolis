@@ -98,6 +98,7 @@ class Templates {
             <li><a href='#wonders'><img src='img/wonder.png'> Wonders</a></li>
             <li><a href='#technology'><img src='img/research.png'> Technology</a></li>
             <li><a href='#diplomacy'><img src='img/diplomacy.png'> Diplomacy</a></li>
+            <li><a href='#corporations'><img src='img/corporations.png'> Corporations</a></li>
             <li><a href='#espionage'><img src='img/espionage.png'> Espionage</a></li>
             <li><a href='#military'><img src='img/military.png'> Military</a></li>
             <li><a href='#culture'><img src='img/culture.png'> Culture</a></li>
@@ -537,6 +538,20 @@ class Templates {
     </section>
     `;
     return diplomacyScreen;
+  }
+
+  createCorporationsScreen(playerCiv:Civilization) {
+    let corporationsScreen = `
+      <section class='screen corporations-screen' id='culture'>
+        <h2>
+          <img src='img/corporations.png'> Corporations
+        </h2>
+        <section class='corporations-screen-inner'>
+
+        </section>
+      </section>
+    `;
+    return corporationsScreen;
   }
 
   createMilitaryScreen(playerCiv:Civilization) {
